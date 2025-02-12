@@ -7,7 +7,7 @@ HEADERS = {'Content-Type' : 'application/json', 'trainer_token' : TOKEN}
 TRAINER_ID = '18385'
 
 def test_status_code():
- respons = requests.get(url = f'{URL}/trainers', params = {'trainer_id' : TRAINER_ID})
+ respons = requests.get(url = f'{URL}/trainers')
  assert respons.status_code == 200
 
 def test_trainer_id():
